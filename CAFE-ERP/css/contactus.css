@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../Assests/background.jpeg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-page {
+    width: 80%; /* Increased width to cover more than half of the page */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info, .contact-form, .map {
+    width: 100%; /* Ensure sections take full width of the contact-page */
+    background: #f9f9f9;
+    padding: 15px; /* Decreased padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2, .map h2 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px; /* Decreased height */
+    border: none;
+    border-radius: 8px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Inventory Management</title>
+    <link rel="stylesheet" href="css/inv.css">
+</head>
+<body>
+    <header>
+        <h1>Cafe Inventory Management</h1>
+    </header>
+
+    <div class="container">
+        <div class="inventory-form">
+            <h2>Add New Item</h2>
+            <form id="add-item-form">
+                <div class="form-group">
+                    <label for="itemId">Item Id</label>
+                    <input type="text" id="itemId" name="itemId" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" id="itemName" name="itemName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="beverages">Beverages</option>
+                        <option value="food">Food</option>
+                        <option value="supplies">Supplies</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="minQuantity">Minimum Quantity</label>
+                    <input type="number" id="minQuantity" name="minQuantity" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemImage">Item Image</label>
+                    <input type="file" id="itemImage" name="itemImage" accept="image/*" required>
+                </div>
+
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+
+        <button id="show-inventory-btn">Show Inventory</button>
+    </div>
+
+    <script src="js/inventory.js"></script>
+</body>
+</html>
